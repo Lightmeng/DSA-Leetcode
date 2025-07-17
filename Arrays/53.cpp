@@ -35,3 +35,24 @@ Constraints:
 Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 */
+
+class Solution 
+{
+public:
+    int maxSubArray(vector<int>& nums) 
+    {
+        int currSum = 0; 
+        int maxSum = INT_MIN;
+        for(int i=0;i<nums.size();i++)
+        {
+            currSum = currSum + nums[i];
+            maxSum = max(maxSum,currSum);
+            if (currSum<0)
+            {
+                currSum=0;
+            } 
+
+        }
+        return maxSum;
+    }
+};

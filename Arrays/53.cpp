@@ -32,7 +32,7 @@ Constraints:
 -104 <= nums[i] <= 104
  
 
-Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle. okay
 
 */
 
@@ -49,7 +49,7 @@ public:
             maxSum = max(maxSum,currSum);
             if (currSum<0)
             {
-                currSum=0;
+                currSum=0; 
             } 
 
         }
